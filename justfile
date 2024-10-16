@@ -10,3 +10,5 @@ start:
 list-services:
   grpcurl -plaintext "localhost:9090" list
 
+call-say-hello:
+  grpcurl  -plaintext -d '{"name": "jackie"}' localhost:9090 Simple/SayHello
