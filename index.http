@@ -1,0 +1,7 @@
+### grpc call SayHello
+//@name SayHello
+GRPC localhost:9090/Simple/SayHello
+
+{
+  "name": "Jackie"
+}
