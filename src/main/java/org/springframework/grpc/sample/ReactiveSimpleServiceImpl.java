@@ -11,12 +11,12 @@ import reactor.core.publisher.Mono;
 public class ReactiveSimpleServiceImpl extends ReactorSimpleGrpc.SimpleImplBase {
     @Override
     public Mono<HelloReply> sayHello(HelloRequest request) {
-        return Mono.just(HelloReply.newBuilder().setMessage("Hello ==> " + request.getName()).build());
+        return Mono.just(HelloReply.newBuilder().setMessage("Hello " + request.getName()).build());
     }
 
     @Override
     public Flux<HelloReply> streamHello(HelloRequest request) {
-        return Flux.just(HelloReply.newBuilder().setMessage("Hello ==> " + request.getName()).build(),
-                HelloReply.newBuilder().setMessage("Hello2 ==> " + request.getName()).build());
+        return Flux.just(HelloReply.newBuilder().setMessage("Hello " + request.getName()).build(),
+                HelloReply.newBuilder().setMessage("Hello2 " + request.getName()).build());
     }
 }
