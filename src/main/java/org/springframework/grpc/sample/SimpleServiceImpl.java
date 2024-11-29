@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.Async;
 //@Service
 public class SimpleServiceImpl extends SimpleGrpc.SimpleImplBase {
 
-    private static Logger log = LoggerFactory.getLogger(SimpleServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(SimpleServiceImpl.class);
 
     @Override
     public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
