@@ -6,8 +6,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>3.4.5</version>
+        <relativePath/>
     </parent>
     <groupId>org.springframework.grpc</groupId>
     <artifactId>spring-grpc-demo</artifactId>
@@ -17,10 +17,10 @@
 
     <properties>
         <java.version>21</java.version>
-        <protobuf-java.version>4.30.0</protobuf-java.version>
+        <protobuf-java.version>4.30.2</protobuf-java.version>
         <grpc.version>1.71.0</grpc.version>
         <reactive-grpc.version>1.2.4</reactive-grpc.version>
-        <spring-grpc.version>0.6.0</spring-grpc.version>
+        <spring-grpc.version>0.8.0</spring-grpc.version>
     </properties>
     <dependencies>
         <dependency>
@@ -80,13 +80,6 @@
                 <groupId>io.grpc</groupId>
                 <artifactId>grpc-bom</artifactId>
                 <version>${grpc.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-framework-bom</artifactId>
-                <version>6.2.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
