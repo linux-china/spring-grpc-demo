@@ -53,3 +53,4 @@ spring.threads.virtual.enabled=true
 * Spring GRPC Docs: https://docs.spring.io/spring-grpc/reference/
 * reactive-grpc: https://github.com/salesforce/reactive-grpc
 * Mocking gRPC in Spring Boot Microservice Integration Tests with WireMock: https://www.infoq.com/articles/mocking-grpc-microservices/
+* A Guide to Spring gRPC Project: https://www.baeldung.com/spring-grpc-project-guide
