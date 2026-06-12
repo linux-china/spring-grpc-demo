@@ -1,4 +1,4 @@
-Spring Boot gRPC Sample
+Spring Boot 4.1 gRPC Sample
 ===========================
 
 spring-grpc demo with Reactive gRPC, and friendly with Spring reactive ecosystem.
@@ -59,3 +59,4 @@ spring.threads.virtual.enabled=true
   WireMock: https://www.infoq.com/articles/mocking-grpc-microservices/
 * A Guide to Spring gRPC Project: https://www.baeldung.com/spring-grpc-project-guide
 * Implement Unit Test in gRPC Service: https://www.baeldung.com/java-unit-tests-grpc-service 
+* Spring gRPC 1.1 Migration Guide: https://github.com/spring-projects/spring-grpc/wiki/Spring-gRPC-1.1-Migration-Guide
