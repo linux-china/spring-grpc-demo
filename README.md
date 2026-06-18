@@ -60,3 +60,4 @@ spring.threads.virtual.enabled=true
 * A Guide to Spring gRPC Project: https://www.baeldung.com/spring-grpc-project-guide
 * Implement Unit Test in gRPC Service: https://www.baeldung.com/java-unit-tests-grpc-service 
 * Spring gRPC 1.1 Migration Guide: https://github.com/spring-projects/spring-grpc/wiki/Spring-gRPC-1.1-Migration-Guide
+* Spring Boot 4.1 gRPC Demo: https://github.com/danvega/hello-grpc
