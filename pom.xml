@@ -132,11 +132,10 @@
                 <version>5.1.4</version>
                 <executions>
                     <execution>
+                        <id>generate</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
-                        <configuration>
-                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
@@ -147,6 +146,7 @@
                             <groupId>io.grpc</groupId>
                             <artifactId>protoc-gen-grpc-java</artifactId>
                             <version>${grpc.version}</version>
+                            <options>@generated=omit</options>
                         </plugin>
                         <plugin kind="jvm-maven">
                             <!-- Use the JAR that Salesforce distributes -->
