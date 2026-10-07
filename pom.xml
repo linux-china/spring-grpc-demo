@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.0</version>
+        <version>4.1.1</version>
         <relativePath/>
     </parent>
     <groupId>org.springframework.grpc</groupId>
@@ -17,8 +17,8 @@
 
     <properties>
         <java.version>25</java.version>
-        <protobuf-java.version>4.35.1</protobuf-java.version>
-        <grpc.version>1.82.0</grpc.version>
+        <protobuf-java.version>4.36.2</protobuf-java.version>
+        <grpc.version>1.84.0</grpc.version>
         <reactive-grpc.version>1.2.4</reactive-grpc.version>
         <spring-grpc.version>1.1.0</spring-grpc.version>
     </properties>
@@ -111,6 +111,7 @@
                 <artifactId>native-maven-plugin</artifactId>
                 <configuration>
                     <buildArgs>
+                        <buildArg>--exact-reachability-metadata</buildArg>
                         <buildArg>--verbose</buildArg>
                     </buildArgs>
                 </configuration>
@@ -129,7 +130,7 @@
             <plugin>
                 <groupId>io.github.ascopes</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
-                <version>5.1.5</version>
+                <version>5.1.11</version>
                 <executions>
                     <execution>
                         <id>generate</id>
