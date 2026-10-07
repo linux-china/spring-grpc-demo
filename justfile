@@ -4,6 +4,9 @@ build:
 native-build:
   mvn -DskipTests -Pnative native:compile
 
+list-metadata:
+  mvn native:list-libraries-missing-metadata
+
 start:
   mvn -DskipTests spring-boot:run
 
